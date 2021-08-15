@@ -1,13 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import { Route } from "react-router-dom";
+
+import { PublicLayout } from "components/layouts";
 
 const PublicRoute = ({ component: Component, ...rest }: any) => {
   return (
     <Route
       {...rest}
-      render={(props) => {
-        <Component {...props} />;
-      }}
+      render={(props) => (
+        <PublicLayout>
+          <Component {...props} />
+        </PublicLayout>
+      )}
     />
   );
 };

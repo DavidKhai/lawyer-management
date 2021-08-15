@@ -1,11 +1,3 @@
-import React from "react";
-interface IProps{
+import LoginContainer from "./login.container";
 
-}
-const LoginContainer = (props: IProps) => {
-  return <div>
-    Login Page
-  </div>
-}
-
-export default LoginContainer
+export default LoginContainer;

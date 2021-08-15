@@ -1,3 +1,21 @@
 cfce -> create functional component + export
 
-constant -> uppercase
+- constants:
+. declare variable to uppercase
+
+- import: 
+  đối với lib/packages ở ngoài thì ưu tiên import trên cùng, còn của system thì import dưới cùng: vd
+
+. bad
+  import React from 'react';
+  import { Home } from 'pages';
+
+  import {Route} from 'react-router-dom;
+  import './app.scss';
+  
+. good
+  import React from 'react';
+  import {Route} from 'react-router-dom;
+
+  import './app.scss';
+  import { Home } from 'pages';
