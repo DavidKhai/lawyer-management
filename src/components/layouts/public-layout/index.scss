@@ -1,0 +1,19 @@
+.pp_footer {
+  text-align: center;
+}
+
+.pp_layout {
+  height: 100%;
+}
+
+.pp_content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/images/login/login_background.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
