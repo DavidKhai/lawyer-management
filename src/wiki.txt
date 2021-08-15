@@ -1,0 +1,3 @@
+cfce -> create functional component + export
+
+constant -> uppercase
